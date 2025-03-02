@@ -4,4 +4,8 @@
 .terraform*
 */venv
 venv
-terraform.state*
+terraform.tfstate*
+*/*/terraform.tfstate*
+*/*/.terraform
+*/*/.terraform*
+.idea/
