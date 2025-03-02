@@ -5,3 +5,8 @@ module "apigw_lambda" {
     region = var.apigw.region
   }
 }
+
+module "step_functions" {
+  source = "./modules/step_functions"
+
+}
