@@ -26,7 +26,7 @@ tdd-apigw-lambda/
 
 * [Terraform](https://www.terraform.io/downloads.html)
 * [AWS CLI](https://aws.amazon.com/cli/) (configured with appropriate credentials)
-* [Python 3.8+](https://www.python.org/downloads/)
+* [Python 3.10+](https://www.python.org/downloads/)
 * [pip](https://pip.pypa.io/en/stable/)
 
 ### Installation
