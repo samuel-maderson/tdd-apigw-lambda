@@ -1,5 +1,5 @@
 variable "apigw" {
-    type = object({
-      region = string
-    })
+  type = object({
+    region = string
+  })
 }

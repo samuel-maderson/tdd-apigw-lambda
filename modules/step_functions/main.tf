@@ -43,7 +43,7 @@ resource "aws_ecs_cluster" "my_cluster" {
 resource "aws_ecs_task_definition" "echo_task" {
   family                   = "echo_task"
   network_mode             = "awsvpc"
-  requires_compatibilities  = ["FARGATE"]
+  requires_compatibilities = ["FARGATE"]
   cpu                      = "256"
   memory                   = "512"
 
@@ -76,7 +76,7 @@ resource "aws_sfn_state_machine" "ecs_fargate_sfn" {
           LaunchType     = "FARGATE",
           NetworkConfiguration = {
             AwsvpcConfiguration = {
-              Subnets         = ["subnet-07abe4f6ce40c013b"], # Change to your subnet IDs
+              Subnets        = ["subnet-07abe4f6ce40c013b"], # Change to your subnet IDs
               AssignPublicIp = "ENABLED"
             }
           }
